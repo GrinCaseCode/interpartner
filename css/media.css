@@ -29,11 +29,11 @@
 	.title-big {
 		font-size: 85px;
 	}
-	.item-activity { 
+	.item-activity {  
 		padding: 35px 47px;
 	}
 	.text-big {
-		font-size: 19px;
+		font-size: 18px;
 	}
 	.slider-news {
 		margin-left: calc((100% - 1140px)/2);
@@ -116,6 +116,10 @@
     .article blockquote,
     .text-advantages {
     font-size: 21px;
+}
+.item-form textarea, .item-form input,
+.item-form .jq-selectbox__select-text {
+	font-size: 16px;
 }
 }
 @media only screen and (max-width : 1510px) {

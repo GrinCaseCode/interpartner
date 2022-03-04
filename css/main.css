@@ -30,7 +30,7 @@ body {
 	overflow-x: hidden;
 	margin: 0; 
 	color: #000;
-	background-color: #fff;
+	background-color: #fff; 
 }
 button {
 	cursor: pointer;
@@ -698,6 +698,7 @@ form {
 .billbord-page {
 	padding-top: 60px;
 	padding-bottom: 50px;
+	min-height: 348px;
 	color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -719,6 +720,7 @@ form {
 	padding-bottom: 30px;
 }
 .advantages_page .advantages-wrap {
+	padding: 23px 0;
 	margin-bottom: 34px;
 }
 .title-main {
@@ -1227,4 +1229,19 @@ color: #FFFFFF;
 }
 .article .date-main {
 	margin-bottom: 20px;
+}
+.advantages_directions {
+	padding-bottom: 0;
+}
+.advantages_directions ~ .activities {
+	padding-top: 0;
+}
+.text-min {
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: -0.01em;
+color: #8F8F8F;
+}
+.about-info {
+	padding-bottom: 60px;
 }

@@ -121,6 +121,19 @@
 .item-form .jq-selectbox__select-text {
 	font-size: 16px;
 }
+.item-history__year {
+    font-size: 25px;
+    line-height: 39px;
+    padding: 3px 21px;
+    margin-right: 14px;
+    }
+    .item-history__title {
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+.item-history p {
+	font-size: 15px;
+}
 }
 @media only screen and (max-width : 1510px) {
 	.logo img {

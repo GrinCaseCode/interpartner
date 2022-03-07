@@ -83,6 +83,24 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
 	});
 
+	$('.slider-history').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 1350,
+			settings: {
+				slidesToShow: 3,
+			}
+		}
+		]
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 

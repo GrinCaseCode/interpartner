@@ -22,6 +22,14 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$(".navigat li a").mPageScroll2id();
 
 
+	 $(".item-question__head").click(function() {
+  $(this).parent().toggleClass("active");
+  $(this).siblings().slideToggle(200);
+  $(this).parent().siblings(".item-question").removeClass("active");
+  $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
+});
+
+
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
@@ -38,6 +46,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".sandwich").removeClass("active");
 		});
 
+$("input[type='file']").change(function(){
+    var filename_text = $(this).parent().siblings(".name-upload");
+    var filename = $(this).val().replace(/.*\\/, "");
+    filename_text.html(filename);
+  });
 	//слайдер
 
 	$('.slider-billbord').slick({
@@ -99,6 +112,18 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			}
 		}
 		]
+	});
+
+	$('.slider-life').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		centerMode: true,
+		variableWidth: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");

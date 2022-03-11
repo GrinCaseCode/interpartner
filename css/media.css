@@ -3,7 +3,7 @@
 	.header__wrap .logo {
 		margin-right: 5px;
 	}
-	.menu li {
+	.menu > li {
 		margin-left: 15px;
 	}
 	.header .social-list {
@@ -18,7 +18,7 @@
 	.logo img {
 		max-width: 300px;
 	}
-	.menu a {
+	.menu > li > a {
 		font-size: 15px;
 	} 
 	.phone-main {
@@ -152,6 +152,29 @@
 		padding-bottom: 50px;
 		padding-right: 30px;
 	}
+	.item-company {
+		margin-right: 11px;
+	}
+	.companies__more {
+		font-size: 14px;
+	}
+	.leasing-block {
+		padding-left: 80px;
+	}
+	.menu ul a {
+    font-size: 18px;
+    height: 70px;
+}
+.menu__icon {
+    width: 75px;
+    }
+    .menu ul {
+    width: 435px;
+    left: -40px;
+}
+.slider-history li {
+    width: 392px;
+    }
 }
 @media only screen and (max-width : 1510px) {
 	.logo img {
@@ -162,7 +185,7 @@
 	.logo img {
 		max-width: 228px;
 	}
-	.menu a {
+	.menu > li > a {
 		font-size: 14px;
 	}
 	.header .social-list {
@@ -180,6 +203,13 @@
 	.info-article {
 		display: none;
 	}
+	.slick-prev {
+		left: 20px;
+	}
+	.slick-next {
+		right: 20px;
+	}
+
 }
 @media only screen and (max-width : 1330px) {
 	.logo img {
@@ -198,7 +228,7 @@
 	.item-service__head {
 		font-size: 23px;
 	}
-	.menu a {
+	.menu > li > a {
 		font-size: 13px;
 	}
 	.phone-main {
@@ -219,6 +249,9 @@
 	.title-big {
 		font-size: 80px;
 	}
+	.policy {
+		padding-left: 80px;
+	}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -232,7 +265,13 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.fancybox-type-iframe .fancybox-inner {
+		height: auto !important;
+	}
+	.fancybox-type-iframe iframe{
+		width: calc(100vw - 40px);
+		height: calc(100vw/1.77);
+	}
 }
 
 /* Extra Small Devices, Phones */

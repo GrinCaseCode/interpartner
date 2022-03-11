@@ -46,6 +46,20 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".sandwich").removeClass("active");
 		});
 
+
+	$(".leasing-block .link-more").click(function(e) {
+		e.preventDefault();
+			if ($(this).siblings(".leasing-block__content").is(":hidden")) {
+			$(this).siblings(".leasing-block__content").slideDown(200);
+			$(this).find("span").html("Скрыть");
+			$(this).addClass("active");
+		} else {
+			$(this).siblings(".leasing-block__content").slideUp(200);
+			$(this).find("span").html("подробнее");
+			$(this).removeClass("active");
+		}
+		});
+
 $("input[type='file']").change(function(){
     var filename_text = $(this).parent().siblings(".name-upload");
     var filename = $(this).val().replace(/.*\\/, "");
@@ -96,23 +110,7 @@ $("input[type='file']").change(function(){
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
 	});
 
-	$('.slider-history').slick({
-		arrows: false,
-		dots: false,
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
-		responsive: [
-		{
-			breakpoint: 1350,
-			settings: {
-				slidesToShow: 3,
-			}
-		}
-		]
-	});
+
 
 	$('.slider-life').slick({
 		arrows: true,

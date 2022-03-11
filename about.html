@@ -19,24 +19,32 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.4" />
-	<link rel="stylesheet" href="css/media.css?ver=1.4" />
+	<link rel="stylesheet" href="css/main.css?ver=1.10" />
+	<link rel="stylesheet" href="css/media.css?ver=1.10" />
 </head>
 <body>
 
 	<div class="wrapper">
 
-		<header class="header header_page">
+		<header class="header">
 			<div class="container-fluid">
 				<div class="header__wrap">
 					<a href="#" class="logo">
 						<img src="img/logo.svg" alt="alt">
-					</a> 
+					</a>
 					<ul class="menu">
 						<li><a href="#">О компании</a></li>
 						<li><a href="#">Карьера в компании</a></li>
 						<li><a href="#">Направление деятельности</a></li>
-						<li><a href="#">Услуги</a></li>
+						<li>
+							<a href="#">Услуги</a>
+							<ul>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu1.svg" alt="alt"></span><span>АвтоCтрахование</span></a></li>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu2.svg" alt="alt"></span><span>АвтоКредит</span></a></li>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu3.svg" alt="alt"></span><span>Лизинг</span></a></li>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu4.svg" alt="alt"></span><span>Сервисное обслужвание</span></a></li>
+							</ul>
+						</li>
 						<li><a href="#">Пресс-центр</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
@@ -73,16 +81,16 @@
 				<div class="advantages-wrap">
 					<div class="row align-items-center">
 						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd1.svg" alt="alt">24 года на рынке</div>
+							<div class="item-advantage">24 года на рынке</div>
 						</div>
 						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd2.svg" alt="alt">30 брендов</div>
+							<div class="item-advantage">30 брендов</div>
 						</div>
 						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd3.svg" alt="alt">10 000 автомобилей</div>
+							<div class="item-advantage">10 000 автомобилей</div>
 						</div>
 						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd4.svg" alt="alt">64 000 запасных частей</div>
+							<div class="item-advantage">64 000 запасных частей</div>
 						</div>
 					</div>
 				</div>
@@ -195,7 +203,8 @@
 			<div class="container">
 				<h2 class="title-section">История</h2>
 			</div>
-			<ul class="slider-history">
+			<div class="sly-wrap">
+				<ul class="slider-history">
 				<li>
 					<div class="item-history">
 						<div class="item-history__year">1997</div>
@@ -234,7 +243,43 @@
 				</li>
 				<li>
 					<div class="item-history">
-						<div class="item-history__year">1997</div>
+						<div class="item-history__year">2007</div>
+						<div class="item-history__content">
+							<div class="item-history__title">Начало пути</div>
+							<p>первые поставки нефтяного оборудования, комплектующих и спецтехники на рынок Удмуртии и РФ.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-history">
+						<div class="item-history__year">2008</div>
+						<div class="item-history__content">
+							<div class="item-history__title">Начало пути</div>
+							<p>первые поставки нефтяного оборудования, комплектующих и спецтехники на рынок Удмуртии и РФ.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-history">
+						<div class="item-history__year">2009</div>
+						<div class="item-history__content">
+							<div class="item-history__title">Начало пути</div>
+							<p>первые поставки нефтяного оборудования, комплектующих и спецтехники на рынок Удмуртии и РФ.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-history">
+						<div class="item-history__year">2010</div>
+						<div class="item-history__content">
+							<div class="item-history__title">Начало пути</div>
+							<p>первые поставки нефтяного оборудования, комплектующих и спецтехники на рынок Удмуртии и РФ.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-history">
+						<div class="item-history__year">2011</div>
 						<div class="item-history__content">
 							<div class="item-history__title">Начало пути</div>
 							<p>первые поставки нефтяного оборудования, комплектующих и спецтехники на рынок Удмуртии и РФ.</p>
@@ -242,7 +287,11 @@
 					</div>
 				</li>
 			</ul>
+			</div>
 			<div class="container">
+				<div class="scrollbar">
+					<div class="handle"></div>
+				</div>
 				<div class="video-block">
 					<div class="video-block__image">
 						<img src="img/video1.jpg" alt="alt">
@@ -253,7 +302,7 @@
 						</div>
 						<div class="video-block__title">Интерпартнер. <br>25 лет. </div>
 						<div class="descr-subtitle">Надежный партнёр на дороге и в бизнесе.</div>
-						<a href="#" class="btn-main"><img src="img/play_min.svg" alt="alt">Смотерть видео</a>
+						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="btn-main fancybox fancybox.iframe"><img src="img/play_min.svg" alt="alt">Смотерть видео</a>
 					</div>
 				</div>
 			</div>
@@ -397,8 +446,27 @@
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/sly/sly.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.4"></script>
+<script src="js/common.js?ver=1.10"></script>
+<script>
+		var options = {
+		horizontal: 1,
+		itemNav: 'basic',
+		speed: 300,
+		mouseDragging: 1,
+		touchDragging: 1,
+		releaseSwing: 1,
+		scrollBar: $('.scrollbar'),
+		scrollBy: 0,
+		activateMiddle: 1,
+		smart: 1,
+		dragHandle: 1,
+
+	};
+var frame = new Sly('.sly-wrap', options).init();
+
+</script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

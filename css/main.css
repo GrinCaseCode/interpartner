@@ -2162,3 +2162,67 @@ form {
 	right: 100%;
 	top: 9px;
 }
+.phone-main img {
+	display: none;
+}
+/*Style Sandwich*/
+.btn_nav {
+	display: none;
+}
+ .sandwich span {
+	display: block;
+}
+ .sandwich {
+	width: 30px;
+	height:25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	top: 2px;
+	padding-top: 2px;
+	z-index: 20;
+	cursor: pointer;
+}
+ .sw-topper {
+	position: relative;
+	top: 4px;
+	display: block;
+	width: 28px;
+	height: 1.5px;
+	background-color: #000000;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	/* transition-delay: 0.2s, 0s; */
+}
+ .sw-footer {
+	position: relative;
+	top: 10px;
+	display: block;
+	width: 20px;
+	height: 1.5px;
+	background-color: #000000;
+	border: medium none;
+	transition: all 0.5s;
+	transition-delay: 0.1s;
+}
+.sandwich.active .sw-topper {
+	top: 10px;
+	width: 24px;
+	transform: rotate(45deg);
+}
+.sandwich.active .sw-footer {
+	top: 9px;
+	width: 24px;
+	transform: rotate(-45deg);
+}
+.slick-dots li button:before {
+	display: none;
+}
+.footer__title i {
+	display: none;
+}

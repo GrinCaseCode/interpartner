@@ -281,6 +281,7 @@
 		padding: 13px 0;
 	}
 	.advantages-wrap > .row {
+		padding: 15px 0;
 		flex-wrap: nowrap;
 		white-space: nowrap;
 		overflow: auto;
@@ -288,6 +289,8 @@
 	}
 	.advantages-wrap > .row::-webkit-scrollbar {
 		-webkit-appearance: none;
+		padding: 0;
+		height: 0;
 	}
 	.advantages-wrap > .row::-webkit-scrollbar:vertical {
 		width: 0px;
@@ -308,7 +311,8 @@
 		line-height: 17px;
 	}
 	.advantages-wrap {
-		padding: 15px 0;
+		padding: 0;
+		margin-bottom: 15px;
 		border: none;
 	}
 	.title-big {
@@ -943,6 +947,14 @@
 		font-size: 0;
 		border: none;
 		opacity: 0;
+	}
+	.menu-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
 	}
 }
 

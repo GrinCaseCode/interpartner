@@ -46,6 +46,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).siblings(".nav-mobile__dropdown").fadeIn(200);
 	});
 
+	$(".menu-overlay").click(function() {
+		$(".menu-mobile").slideUp(200);
+		$(".sandwich").removeClass("active");
+	});
+
 	$(".nav-mobile__title").click(function() {
 		$(this).parent().fadeOut(200);
 	});

@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.10" />
-	<link rel="stylesheet" href="css/media.css?ver=1.10" />
+	<link rel="stylesheet" href="css/main.css?ver=1.12" />
+	<link rel="stylesheet" href="css/media.css?ver=1.12" />
 </head>
 <body>
 
@@ -33,9 +33,29 @@
 						<img src="img/logo.svg" alt="alt">
 					</a>
 					<ul class="menu">
-						<li><a href="#">О компании</a></li>
+						<li>
+							<a href="#">О компании</a>
+							<ul>
+								<li><a href="#">История компании</a></li>
+								<li><a href="#">Руководство</a></li>
+								<li><a href="#">Карьера в компании</a></li>
+								<li><a href="#">Документы и реквизиты</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Карьера в компании</a></li>
-						<li><a href="#">Направление деятельности</a></li>
+						<li>
+							<a href="#">Направление деятельности</a>
+							<ul>
+								<li><a href="#">Сельхозтехника</a></li>
+								<li><a href="#">Спецтехника</a></li>
+								<li><a href="#">Автобусы</a></li>
+								<li><a href="#">Грузовые автомобили</a></li>
+								<li><a href="#">Легковые автомобили и внедорожники</a></li>
+								<li><a href="#">Автомобили с пробегом</a></li>
+								<li><a href="#">Запасные части</a></li>
+								<li><a href="#">Техника в наличии</a></li>
+							</ul>
+						</li>
 						<li>
 							<a href="#">Услуги</a>
 							<ul>
@@ -48,7 +68,7 @@
 						<li><a href="#">Пресс-центр</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
-					<a href="tel:+73412637800" class="phone-main">+7 (3412) 63-78-00</a>
+					<a href="tel:+73412637800" class="phone-main"><img src="img/phone.svg" alt="alt">+7 (3412) 63-78-00</a>
 					<ul class="social-list">
 						<li><a href="#"><img src="img/instagram.svg" alt="alt"></a></li>
 						<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
@@ -56,7 +76,80 @@
 						<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
 					</ul>
 					<a href="#" class="btn-search"><img src="img/search.svg" alt="alt"></a>
+					<span class="btn_nav">
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-footer'></span>
+						</span>
+					</span>
 				</div>
+			</div>
+			<div class="menu-mobile">
+				<div class="menu-mobile__top">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<a href="tel:+73412637800" class="phone-main"><img src="img/phone.svg" alt="alt"></a>
+				</div>
+				<div class="search-block">
+					<input type="text" placeholder="Поиск по сайту">
+					<button class="search-block__btn"></button>
+				</div>
+				<ul class="nav-mobile">
+					<li class="nav-mobile__haschild">
+						<a href="#">О компании</a>
+						<div class="nav-mobile__dropdown">
+							<div class="nav-mobile__title">О компании</div>
+							<ul>
+								<li><a href="#">История компании</a></li>
+								<li><a href="#">Руководство</a></li>
+								<li><a href="#">Карьера в компании</a></li>
+								<li><a href="#">Документы и реквизиты</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Карьера в компании</a></li>
+					<li class="nav-mobile__haschild">
+						<a href="#">Направление деятельности</a>
+						<div class="nav-mobile__dropdown">
+							<div class="nav-mobile__title">Направление деятельности</div>
+							<ul>
+								<li><a href="#">Сельхозтехника</a></li>
+								<li><a href="#">Спецтехника</a></li>
+								<li><a href="#">Автобусы</a></li>
+								<li><a href="#">Грузовые автомобили</a></li>
+								<li><a href="#">Легковые автомобили и внедорожники</a></li>
+								<li><a href="#">Автомобили с пробегом</a></li>
+								<li><a href="#">Запасные части</a></li>
+								<li><a href="#">Техника в наличии</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-mobile__haschild">
+						<a href="#">Услуги</a>
+						<div class="nav-mobile__dropdown">
+							<div class="nav-mobile__title">Услуги</div>
+							<ul>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu1.svg" alt="alt"></span>АвтоCтрахование</a></li>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu2.svg" alt="alt"></span>АвтоКредит</a></li>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu3.svg" alt="alt"></span>Лизинг</a></li>
+								<li><a href="#"><span class="menu__icon"><img src="img/menu4.svg" alt="alt"></span>Сервисное обслужвание</a></li>
+							</ul>
+						</div> 
+					</li>
+					<li><a href="#">Пресс-центр</a></li> 
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a href="tel:+73412637800" class="phone-menu">+7 (3412) 63-78-00</a>
+				<br>
+				<a href="#callback" class="btn-page fancybox">Заказать звонок</a>
+				<ul class="social-list">
+					<li><a href="#"><img src="img/instagram.svg" alt="alt"></a></li>
+					<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+					<li><a href="#"><img src="img/youtube.svg" alt="alt"></a></li>
+					<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+				</ul>
+				<div class="menu-copyright">©2013–2021. Все права защищены. Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой.</div>
 			</div>
 		</header>
 
@@ -162,25 +255,25 @@
 		<div class="brands">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-6">
 						<div class="item-brand">
 							<img src="img/brand1.svg" alt="alt">
 							<a href="#" class="link-main">подробнее</a>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-6">
 						<div class="item-brand">
 							<img src="img/brand2.svg" alt="alt">
 							<a href="#" class="link-main">подробнее</a>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-6">
 						<div class="item-brand">
 							<img src="img/brand3.svg" alt="alt">
 							<a href="#" class="link-main">подробнее</a>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-6">
 						<div class="item-brand">
 							<img src="img/brand4.svg" alt="alt">
 							<a href="#" class="link-main">подробнее</a>
@@ -340,7 +433,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg">
-						<div class="footer__title">О компании</div>
+						<div class="footer__title footer__title_mob">О компании <i class="fal fa-angle-down"></i></div>
 						<div class="footer__content">
 							<ul class="footer__nav">
 								<li><a href="#">История компании</a></li>
@@ -351,7 +444,7 @@
 						</div>
 						<br>
 						<br>
-						<div class="footer__title">Услуги</div>
+						<div class="footer__title footer__title_mob">Услуги <i class="fal fa-angle-down"></i></div>
 						<div class="footer__content">
 							<ul class="footer__nav">
 								<li><a href="#">Автокредитование</a></li>
@@ -363,8 +456,8 @@
 						</div>
 					</div>
 					<div class="col-footer">
-						<div class="footer__title">Направления деятельности</div>
-						<div class="footer__content"> 
+						<div class="footer__title footer__title_mob">Направления деятельности <i class="fal fa-angle-down"></i></div>
+						<div class="footer__content">
 							<ul class="footer__nav">
 								<li><a href="#">Сельхозтехника</a></li>
 								<li><a href="#">Спецтехника</a></li>
@@ -379,25 +472,21 @@
 					</div>
 					<div class="col-lg">
 						<div class="footer__title">ООО фирма "Интерпартнер"/</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, 426049, г. <br>Ижевск, ул. Гагарина, 81</p>
-								<div><a href="tel:+73412637800">+7 (3412) 63-78-00 </a></div>
-								<div><a href="tel:+73412630036">+7 (3412) 63-00-36</a> <span>Сервис</span></div>
-								<br>
-								<p>Запчасти</p>
-								<div><a href="tel:+73412630007">+7 (3412) 63-00-07</a> <span>Спецтехника</span></div>
-								<div><a href="tel:+73412630003">+7 (3412) 63-00-03</a> <span>Сельхозтехника</span></div>
-							</div>
+						<div class="footer__contacts">
+							<p>Россия, УР, 426049, г. <br>Ижевск, ул. Гагарина, 81</p>
+							<div><a href="tel:+73412637800">+7 (3412) 63-78-00 </a></div>
+							<div><a href="tel:+73412630036">+7 (3412) 63-00-36</a> <span>Сервис</span></div>
+							<br>
+							<p>Запчасти</p>
+							<div><a href="tel:+73412630007">+7 (3412) 63-00-07</a> <span>Спецтехника</span></div>
+							<div><a href="tel:+73412630003">+7 (3412) 63-00-03</a> <span>Сельхозтехника</span></div>
 						</div>
 					</div>
 					<div class="col-lg">
 						<div class="footer__title">Автосалоны Ssang Yong, UAZ, FIAT Professional</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, г. Ижевск, ул. Промышленная, 2</p>
-								<div><a href="tel:3412658283">(3412) 65-82-83</a></div>
-							</div>
+						<div class="footer__contacts">
+							<p>Россия, УР, г. Ижевск, ул. Промышленная, 2</p>
+							<div><a href="tel:3412658283">(3412) 65-82-83</a></div>
 						</div>
 					</div>
 				</div>
@@ -424,7 +513,7 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/sly/sly.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.10"></script>
+<script src="js/common.js?ver=1.12"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {
@@ -455,6 +544,13 @@
 			myMap.behaviors.disable('scrollZoom');
 			myMap.geoObjects.add(myPlacemark1);
 			myPlacemark1.balloon.open();
+
+			{
+				if ($(window).width() < 1200) { 
+					myPlacemark1.balloon.close();
+					  myMap.setCenter([56.781986, 53.179771]);
+				}
+			}
 		}
 	});
 
@@ -486,6 +582,13 @@
 			myMap.behaviors.disable('scrollZoom');
 			myMap.geoObjects.add(myPlacemark1);
 			myPlacemark1.balloon.open();
+
+			{
+				if ($(window).width() < 1200) { 
+					myPlacemark1.balloon.close();
+					myMap.setCenter([56.833082, 53.232268]);
+				}
+			}
 		}
 	});
 </script>

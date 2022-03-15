@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.13" />
-	<link rel="stylesheet" href="css/media.css?ver=1.13" />
+	<link rel="stylesheet" href="css/main.css?ver=1.15" />
+	<link rel="stylesheet" href="css/media.css?ver=1.15" />
 </head>
 <body>
 
@@ -174,16 +174,16 @@
 			<div class="container">
 				<div class="advantages-wrap">
 					<div class="row align-items-center">
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3">
 							<div class="item-advantage">24 года на рынке</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3">
 							<div class="item-advantage">30 брендов</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3">
 							<div class="item-advantage">10 000 автомобилей</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3">
 							<div class="item-advantage">64 000 запасных частей</div>
 						</div>
 					</div>
@@ -409,7 +409,7 @@
 							<div class="col-lg-6">
 								<div class="right-form">
 									<div class="form-agreement">Нажимая на кнопку “Задать вопрос” вы соглашаетесь с передачей <a href="#">персональных данных.</a></div>
-									<a href="#" class="btn-main btn-main_block">Задать вопрос</a>
+									<button class="btn-main btn-main_block">Задать вопрос</button>
 								</div>
 							</div>
 						</div>
@@ -500,6 +500,62 @@
 		</footer>
 
 	</div>
+
+	<div id="callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-content">Консультация</div>
+			<div class="descr-modal">Заполните форму, мы в самое ближайшее время свяжемся с Вами и ответим на все вопросы</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя" required="required">
+					<div class="descr-input">обязательно к заполнению</div>
+				</div>
+				<div class="item-form">
+					<input type="text" placeholder="Номер телефона" class="input-phone" required="required">
+					<div class="descr-input">обязательно к заполнению</div>
+				</div>
+				<div class="item-form">
+					<input type="email" placeholder="Ваш email" required="required">
+					<div class="descr-input">обязательно к заполнению</div>
+				</div>
+				<div class="item-form">
+					<select>
+						<option value="1">автострахование</option>
+						<option value="1">автострахование</option>
+						<option value="1">автострахование</option>
+						<option value="1">автострахование</option>
+					</select>
+				</div>
+				<div class="item-form">
+					<textarea placeholder="Сообщение"></textarea>
+					<div class="descr-input">обязательно к заполнению</div>
+				</div>
+				<div class="capcha-block">
+					<div class="capcha-block__title">Введите код с картинки</div>
+					<div class="capcha__wrap">
+						<div class="capcha-value">
+							<div class="capcha__text">89A28</div>
+							<div class="capcha__reload">
+								<img src="img/reload.svg" alt="alt">
+							</div>
+						</div>
+						<input type="text" class="input-capcha" value="89A28">
+					</div>
+				</div>
+				<button class="btn-main btn-main_block">Задать вопрос</button>
+				<div class="form-agreement">Нажимая на кнопку “Задать вопрос” вы соглашаетесь с передачей <a href="#">персональных данных.</a></div>
+			</form>
+		</div>
+	</div>
+
+	<div id="thanks" class="modal-block">
+		<div class="modal-wrap">
+			<img src="img/arrow_big.svg" alt="alt">
+			<div class="title-content">Спасибо!</div>
+			<div class="descr-modal">Ваше сообщение отправлено!  В самое короткое время мы свяжемся с Вами</div>
+			<button class="btn-main btn-main_block">Хорошо, спасибо!</button>
+		</div>
+	</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -514,7 +570,7 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/sly/sly.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.13"></script>
+<script src="js/common.js?ver=1.15"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {

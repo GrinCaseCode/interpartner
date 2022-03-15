@@ -56,6 +56,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".sandwich").removeClass("active");
 	});
 
+	$(".menu-mobile .fancybox").click(function() {
+		$(".menu-mobile").slideUp(200);
+		$(".sandwich").removeClass("active");
+	});
+
 	$(".nav-mobile__title").click(function() {
 		$(this).parent().fadeOut(200);
 	});

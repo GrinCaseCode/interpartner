@@ -50,6 +50,10 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		e.preventDefault();
 		$.fancybox.open('#thanks');
 	});
+	$("#thanks .btn-main").click(function(e) {
+		e.preventDefault();
+		$.fancybox.close('#thanks');
+	});
 
 	$(".menu-overlay").click(function() {
 		$(".menu-mobile").slideUp(200);

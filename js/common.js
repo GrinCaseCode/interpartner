@@ -46,7 +46,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).siblings(".nav-mobile__dropdown").fadeIn(200);
 	});
 
-	$("#callback .btn-main").click(function(e) {
+	$("#modal-consultation .btn-main").click(function(e) {
 		e.preventDefault();
 		$.fancybox.open('#thanks');
 	});
@@ -179,6 +179,17 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fal fa-long-arrow-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fal fa-long-arrow-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				arrows: false,
+				centerMode: false,
+				dots: true,
+				variableWidth: true
+			}
+		}
+		]
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");

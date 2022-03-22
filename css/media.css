@@ -1273,6 +1273,7 @@
 	}
 	.info-insurance__name {
 		font-size: 18px;
+		line-height: 26px;
 	}
 	.info-insurance__description {
 		margin-left: 110px;

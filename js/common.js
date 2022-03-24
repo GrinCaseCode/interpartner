@@ -29,6 +29,22 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
 	});
 
+	$(".btn-search").click(function(e) {
+		e.preventDefault();
+		$(".search-modal").fadeToggle(200);
+		
+	});
+
+	$(".clear-search").click(function(e) {
+		e.preventDefault();
+		$(".input-search input").val('');
+	});
+
+	$(".search-overlay").click(function(e) {
+		e.preventDefault();
+		$(".search-modal").fadeOut(200);
+	});
+
 
 	//кнопка sandwich
 	$(".btn_nav").click(function() {

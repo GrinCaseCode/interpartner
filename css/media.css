@@ -175,6 +175,20 @@
 	.slider-history li {
 		width: 392px;
 	}
+	.input-search input {
+    font-size: 22px;
+    padding-left: 70px;
+    padding-right: 200px;
+    height: 100px;
+}
+.search-button {
+    width: 26px;
+    height: 26px;
+    right: 60px;
+    }
+    .clear-search {
+    	right: 140px;
+    }
 }
 @media only screen and (max-width : 1510px) {
 	.logo img {
@@ -599,38 +613,7 @@
 		overflow: auto;
 		display: none;
 	}
-	.search-block {
-		margin-bottom: 15px;
-		position: relative;
-	}
-	.search-block input {
-		font-size: 13px;
-		line-height: 16px;
-		padding-right: 40px;
-		letter-spacing: -0.01em;
-		color: #4A4C4E;
-		background: #F5F6F8;
-		border: none;
-		width: 100%;
-		height: 43px;
-		padding: 0 30px;
-		border-radius: 8px;
-		font-family: 'Inter';
-		position: relative;
-	}
-	.search-block__btn {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 50px;
-		height: 100%;
-		background-color: transparent;
-		background-image: url(../img/search.svg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 13px 13px;
-		border: none;
-	}
+	
 	.nav-mobile {
 		margin-bottom: 35px;
 	}
@@ -1460,6 +1443,9 @@
 	width: 100%;
 	height: 40px;
 }
+.search-modal {
+	display: none !important;
+}
 }
 
 
@@ -1533,6 +1519,50 @@
 		margin-right: 0;
 		margin-bottom: 15px;
 	}
+	.head-search {
+		display: block;
+	}
+	.head-search .search-block {
+		margin-bottom: 22px;
+		width: 100%;
+	}
+	.sorting-search a {
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 9px;
+    margin-right: 21px;
+}
+.search {
+	padding-top: 10px;
+}
+.item-search {
+    padding: 15px 0;
+    padding-left: 27px;
+    }
+    .item-search__title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+.item-search__number {
+    font-size: 16px;
+    line-height: 20px;
+    top: 15px;
+    }
+    .item-search .breadcrumbs {
+    	font-size: 11px;
+    }
+    .item-search p {
+    	font-size: 14px;
+    	line-height: 17px;
+    	            display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    }
+    .search .more-button {
+    padding-top: 35px;
+}
 }
 
 /* Small Devices, Tablets */

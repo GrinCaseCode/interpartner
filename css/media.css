@@ -189,6 +189,12 @@
     .clear-search {
     	right: 140px;
     }
+    .title-error {
+    	padding-bottom: 30px;
+    }
+    .error-page .title-section {
+    	margin-bottom: 55px;
+    }
 }
 @media only screen and (max-width : 1510px) {
 	.logo img {
@@ -1446,6 +1452,9 @@
 .search-modal {
 	display: none !important;
 }
+.error-page {
+	padding: 60px 0;
+}
 }
 
 
@@ -1592,6 +1601,17 @@
 	.item-activity {
 		min-height: 110px;
 	}
+	.error-page {
+		padding-top: 30px;
+	}
+	.title-error {
+    font-size: 155px;
+    line-height: 150px;
+}
+.title-error {
+    font-size: 145px;
+    line-height: 142px;
+}
 }
 
 /* Extra Small Devices, Phones */
